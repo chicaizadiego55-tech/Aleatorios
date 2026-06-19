@@ -73,3 +73,7 @@ function mostrarResultados(arregloNumeros){
 
     divResultados.innerHTML = contenidoTabla;
 }
+
+function alvisar(){
+    alert("Hola, soy un mensaje de alerta");
+}
