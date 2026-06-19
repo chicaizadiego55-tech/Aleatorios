@@ -17,9 +17,9 @@ function generarAleatorios(){
     cantidad = recuperarInt("txtCantidad");
 
     // Validación
-    if(cantidad < 5 || cantidad > 20){
+    if(cantidad < 10 || cantidad > 20){
 
-        alert("Ingrese un número entre 5 y 20");
+        alert("Ingrese un número entre 10 y 20");
 
         return;
     }
@@ -36,6 +36,7 @@ function generarAleatorios(){
     }
 
     mostrarResultados(aleatorios);
+    
 }
 
 
@@ -54,7 +55,7 @@ function mostrarResultados(arregloNumeros){
     contenidoTabla += "<th>NÚMERO</th>";
     contenidoTabla += "</tr>";
 
-    for(let i = 1; i < arregloNumeros.length; i++){
+    for(let i = 2; i < arregloNumeros.length; i++){
 
         contenidoTabla += "<tr>";
 
@@ -72,4 +73,5 @@ function mostrarResultados(arregloNumeros){
     contenidoTabla += "</table>";
 
     divResultados.innerHTML = contenidoTabla;
+    
 }
