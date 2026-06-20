@@ -75,3 +75,8 @@ function mostrarResultados(arregloNumeros){
     divResultados.innerHTML = contenidoTabla;
     
 }
+
+function alerta(){
+
+    alert("esta es una alerta");
+}
