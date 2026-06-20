@@ -1,10 +1,10 @@
 function generarNumeroAleatorio(){
 
-    let numeroAleatorio;
+    let aleatorio;
 
-    numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+    aleatorio = Math.floor(Math.random() * 100) + 1;
 
-    return numeroAleatorio;
+    return aleatorio;
 }
 
 
@@ -17,9 +17,9 @@ function generarAleatorios(){
     cantidad = recuperarInt("txtCantidad");
 
     // Validación
-    if(cantidad < 10 || cantidad > 20){
+    if(cantidad < 70 || cantidad > 80){
 
-        alert("Ingrese un número entre 10 y 20");
+        alert("Ingrese un número entre 70 y 80");
 
         return;
     }
@@ -55,7 +55,7 @@ function mostrarResultados(arregloNumeros){
     contenidoTabla += "<th>NÚMERO</th>";
     contenidoTabla += "</tr>";
 
-    for(let i = 2; i < arregloNumeros.length; i++){
+    for(let i = 3; i < arregloNumeros.length; i++){
 
         contenidoTabla += "<tr>";
 
