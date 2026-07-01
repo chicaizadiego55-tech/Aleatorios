@@ -17,7 +17,7 @@ function generarAleatorios(){
     cantidad = recuperarInt("txtCantidad");
 
     // Validación
-    if(cantidad < 70 || cantidad > 80){
+    if(cantidad < 20 || cantidad > 30){
 
         alert("Ingrese un número entre 70 y 80");
 
